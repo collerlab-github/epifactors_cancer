@@ -19,7 +19,7 @@ This script normalizes the cancer patient raw counts dataframe using DESeq2 and 
 
 
 
-# 02_epigenes_filter.R
+## 02_epigenes_filter.R
 
 This script filters normalized and log2 normalized data frames by epigenes (data frames 1 and 2), then subsets them based on epigenes with at least 25% of patients >=5 normalized counts (data frames 3 and 4), then subsets them based on the epigenes with log2 normalized expression standard deviation >= cutoff, which is set to include at least 450 epigenes (data frames 5 and 6). All data frames are outputted, as well as a standard deviation cutoff table.
 
