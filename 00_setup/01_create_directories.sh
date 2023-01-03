@@ -17,7 +17,6 @@ mkdir 03_nmf
 mkdir 04_clinical_analysis
 mkdir 05_gene_clinical_prediction_analysis
 mkdir 06_diff_gene_info
-mkdir 07_prognosis_ML_classifier
 mkdir papers
 mkdir supplemental
 cp ../scripts/00_setup/02_purity_collection.R ./01_data_collection/
