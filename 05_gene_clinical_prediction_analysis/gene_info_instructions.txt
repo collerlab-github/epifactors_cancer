@@ -1,0 +1,12 @@
+Cbioportal
+
+Go to cbioportal.org
+Under the Query tab on top left, select the study based on tissue and study (ex: Prostate, TCGA Cell 2015).
+Then click 'Explore Selected Studies' on the bottom of the page.
+The study id is in the URL after 'id=' (ex 'prad_tcga_pub').
+Use this id for the patients in the following scripts.
+
+BRCA - brca_tcga_pub
+PRAD - prad_tcga_pub
+LUAD - luad_tcga_pub
+CRC - coadread_tcga_pub
