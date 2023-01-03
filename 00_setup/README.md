@@ -17,7 +17,9 @@ This script creates all the folders necessary for the analysis.
 
 ## 02_purity_collection.R
 
-This script outputs a table of cutoffs and patients for a user-defined cancer type. Before running, the patient list must be downloaded to the 'supplemental' folder from the original TCGA or TARGET manuscript.
+This script outputs a table of cutoffs and patients for a user-defined cancer type. 
+
+Before running, the patient list must be downloaded to the 'supplemental' folder from the original TCGA or TARGET manuscript.
 After deciding a cutoff, the script is run again to output a data frame of patients and purity scores.
 
 
