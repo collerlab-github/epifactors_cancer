@@ -11,11 +11,11 @@ This folder contains scripts for running NMF and generating initial visualizatio
 Here are the descriptions for the scripts.
 
 
-## 01_NMF
+## 01_nmf
 
 This script runs NMF on the patient x epigene matrix, picks an optimal rank, and retrieves patients' cluster memberships and top NMF genes.
 
-## 02_heatmap.R
+## 02_top_genes_heatmap.R
 
 This script generates heatmaps for top NMF genes and patient groups.
 
