@@ -16,10 +16,10 @@ Download mutation and CNA data from respective tables.
 
 This script formats mutation and cnv data from CBioPortal.
 
-## cnv_fisher_heatmap.R
+## cnv_fisher.R
 
-This script calculates cnv enrichment in the high or low groups for each prognostic gene in each cancer type and visualizes results with a heatmap.
+This script calculates cnv enrichment in the high or low groups for each prognostic gene in each cancer type.
 
-## mutation_fisher_heatmap.R
+## mutation_fisher.R
 
-This script calculates mutation enrichment in the high or low groups for each prognostic gene in each cancer type and visualizes results with a heatmap.
+This script calculates mutation enrichment in the high or low groups for each prognostic gene in each cancer type.
