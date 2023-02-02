@@ -2,10 +2,7 @@
 
 Prerequisites: 05_nmf and its prerequisites must be completed.
 
-This folder contains scripts for single-gene stratification and survival analysis of patients for the clinical endpoints.
-
-
-Here are the descriptions for the scripts.
+This folder contains scripts for single-gene stratification and survival analysis of patients for the clinical endpoints. Here are the descriptions for the scripts.
 
 
 ## 01_survminer.R
