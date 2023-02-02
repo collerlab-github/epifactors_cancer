@@ -2,9 +2,7 @@
 
 Prerequisites: 01_data_collection and 02_filtering must be completed.
 
-This folder contains scripts for running NMF and generating initial visualizations.
-
-Here are the descriptions for the scripts.
+This folder contains scripts for running NMF and generating initial visualizations. Here are the descriptions for the scripts.
 
 
 ## 01_nmf
