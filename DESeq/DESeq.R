@@ -107,16 +107,3 @@ res_df <- res_df%>%arrange(padj)
 
 write.csv(res_df,paste0(project,'_',cancer,'_DESeq_output.csv'),row.names=T)
 
-# res_df$DE <- "No"
-# fc_cutoff <- 0.6
-# res_df$DE[res_df$log2FoldChange > fc_cutoff & res_df$padj < 0.05] <- "Up"
-# res_df$DE[res_df$log2FoldChange < -fc_cutoff & res_df$padj < 0.05] <- "Down"
-# # volcano plot
-# library(ggplot2)
-# # plot adding up all layers we have seen so far
-# ggplot(data=res_df, aes(x=log2FoldChange, y=-log10(padj), col=DE)) +
-#   geom_point() + 
-#   scale_color_manual(values=c("blue", "black", "red")) +
-#   geom_vline(xintercept=c(-0.6, 0.6), col="red", linetype='dashed') +
-#   geom_hline(yintercept=-log10(0.05), col="red", linetype='dashed') +
-#   ggtitle(paste0(project,' ',cancer,' Fold Change '))
