@@ -1,3 +1,3 @@
 # Shell Scripts
 
-This folder contains shell scripts to automate the NMF and prognostic gene analysis.
+This folder contains shell scripts to automate the data collection and NMF and prognostic gene analyses.
