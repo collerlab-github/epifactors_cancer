@@ -2,10 +2,7 @@
 
 Prerequisites: 03_nmf and its prerequisites must be completed.
 
-This folder contains scripts for running survival analysis for the OS, DSS, and PFI endpoints with different covariates.
-
-
-Here are the descriptions for the scripts.
+This folder contains scripts for running survival analysis for the OS, DSS, and PFI endpoints with different covariates. Here are the descriptions for the scripts.
 
 
 ## 01_survival.R
