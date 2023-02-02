@@ -12,7 +12,7 @@ Here are the descriptions for the scripts.
 
 This script conducts uses survminer to stratify patients into high and low expression of each epigene and then performs survival analysis with cox regression to correct for patient age and gender.
 
-## 01_survminer_one_gene.R
+## 02_survminer_one_gene.R
 
 This script conducts uses survminer to stratify patients into high and low expression of a user-specified epigene and then performs survival analysis with cox regression to correct for patient age and gender.
 
