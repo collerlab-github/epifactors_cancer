@@ -12,18 +12,14 @@ Under 'Custom Selection' select 'By Patient ID' and paste patient ids.
 
 Download mutation and CNA data from respective tables.
 
-## 01_survminer.R
+## mutation_and_cna_gene.R
 
-This script conducts uses survminer to stratify patients into high and low expression of each epigene and then performs survival analysis with cox regression to correct for patient age and gender.
+This script formats mutation and cnv data from CBioPortal.
 
-## 02_survminer_one_gene.R
+## cnv_fisher_heatmap.R
 
-This script conducts uses survminer to stratify patients into high and low expression of a user-specified epigene and then performs survival analysis with cox regression to correct for patient age and gender.
+This script calculates cnv enrichment in the high or low groups for each prognostic gene in each cancer type and visualizes results with a heatmap.
 
-## HR_forest_plot.R
+## mutation_fisher_heatmap.R
 
-This script plots the hazard ratios of the most significant endpoint-prognostic gene for each cancer.
-
-## circos_plot.R
-
-This script plots a circos plot for the most frequent endpoint-prognostic genes among all cancers.
+This script calculates mutation enrichment in the high or low groups for each prognostic gene in each cancer type and visualizes results with a heatmap.
