@@ -142,7 +142,6 @@ plot_surv <- function(clust, cancer_surv){
       cox_df[,e] <<- coxpval
     }
     
-    # write.csv(coxpval, paste0('Rank_',rank,'/',cancer,"_rank",rank,"_cluster", paste(clust, collapse="_"), "_cox_pval_",e,".csv"))
     # compute p-value of survival curve difference and write to pval_df
     diff <- survdiff(s~cluster,data=e_clust_data)
     pval <- pchisq(diff$chisq,df=length(diff$n)-1,lower.tail=F)
