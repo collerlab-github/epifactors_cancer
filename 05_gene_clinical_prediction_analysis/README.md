@@ -10,11 +10,11 @@ Here are the descriptions for the scripts.
 
 ## 01_survminer.R
 
-This script conducts uses survminer to stratify patients into high and low expression of a given gene and then performs survival analysis with cox regression to correct for patient age and gender.
+This script conducts uses survminer to stratify patients into high and low expression of each epigene and then performs survival analysis with cox regression to correct for patient age and gender.
 
-## 01_survival_purity.R
+## 01_survminer_one_gene.R
 
-This script conducts survival analysis with cox regression to correct for patient age, gender, and purity information.
+This script conducts uses survminer to stratify patients into high and low expression of a user-specified epigene and then performs survival analysis with cox regression to correct for patient age and gender.
 
 ## 01_survival_tp53.R
 
