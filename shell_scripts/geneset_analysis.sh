@@ -25,11 +25,8 @@ do
 	Rscript 01_nmf.R $c
 	echo 'Heatmap of Ranks 2 NMF top epigene expression'
 	Rscript 02_top_genes_heatmap.R $c 2
-	echo 'Heatmap of Ranks 3 NMF top epigene expression'
-	Rscript 02_top_genes_heatmap.R $c 3
 	echo 'PCA of patients epigene expression with NMF cluster projection'
-	Rscript 03_top_genes_pca.R $c 2
-	Rscript 03_top_genes_pca.R $c 3
+	Rscript 03_epigenes_nmf_pca.R $c 2
 
 	cd ../
 
@@ -37,7 +34,6 @@ do
 	echo 'Survival Analysis'
 	cd 04_clinical_analysis
 	Rscript 01_survival.R $c 2
-	Rscript 01_survival.R $c 3
 	cd ../
 	echo 'finished'
 done
