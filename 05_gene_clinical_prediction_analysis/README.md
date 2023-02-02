@@ -2,10 +2,7 @@
 
 Prerequisites: 03_nmf and its prerequisites must be completed.
 
-This folder contains scripts for single-gene stratification and survival analysis of patients for the OS and PFI endpoints with different covariates.
-
-
-Here are the descriptions for the scripts.
+This folder contains scripts for single-gene stratification and survival analysis of patients for the OS and PFI endpoints with different covariates. Here are the descriptions for the scripts.
 
 
 ## 01_survminer.R
