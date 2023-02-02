@@ -45,24 +45,6 @@ print('Performing PCA')
 p <- pca(epigenes,metadata=sample_cluster, removeVar=0.1)
 
 
-
-# screeplot
-screeplot(p, axisLabSize=18, titleLabSize=22,components = getComponents(p, 1:20), title=paste0(cancer, ' SCREE Plot'))
-ggsave('NMF_screeplot_20_PC.png')
-# optimal number of PC's to retain
-print('Optimal Number of PCs: ')
-# horn method
-horn <- parallelPCA(epigenes)
-print(paste0('horn method: ',horn$n))
-# elbow method
-elbow <- findElbowPoint(p$variance)
-print(paste0('elbow method: ', elbow))
-print('Generating screeplot')
-screeplot(p, components = getComponents(p, 1:(horn$n +5)), vline = c(horn$n, elbow), title=paste0(cancer,' SCREE Plot')) +
-  geom_label(aes(x=horn$n - 1, y=50, label='Horn\'s', vjust=-1, size=8)) +
-  geom_label(aes(x=elbow+1, y=50, label='Elbow method', vjust=-1, size=8))
-ggsave('NMF_screeplot_optimal_pcs.png')
-
 # bi-plot
 # with just first two pc's
 print('Generating PCA visualizations')
@@ -72,13 +54,4 @@ ggsave(paste0('Rank_',rank,'/NMF_rank',rank,'_pca_1+2_biplot.png'))
 biplot(p, showLoadings=T, title = paste0(cancer, " NMF PCA"), titleLabSize=30, colby='Cluster', lab=NULL, 
        legendPosition = 'right', legendLabSize=18, legendTitleSize = 20, axisLabSize=25, encircle=T)
 ggsave(paste0('Rank_',rank,'/NMF_rank',rank,'_pca_1+2_biplot_loadings.png'))
-
-# pairs plot
-pairsplot(p, title=paste0(cancer, ' Pairs Plot'), colby='Cluster', lab=NULL)
-ggsave(paste0('Rank_',rank,'/NMF_rank',rank, '_pairsplot.png'))
-
-# loadings plot
-plotloadings(p, labSize = 3, title=paste0(cancer, ' Loadings Plot'), titleLabSize=30)
-ggsave(paste0(cancer, '_loadingsplot.png'))
-
 
