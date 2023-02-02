@@ -118,9 +118,7 @@ plot_surv <- function(clust, cancer_surv){
     } else{
       e_data <- cancer_surv[,c(e,t,'cluster','age','gender','purity')]
     }
-    # # plot data for each pairwise cluster combination
-    # lapply(cluster_comb, FUN=plot_surv, e_data=e_data)
-    
+    # plot data for each pairwise cluster combination
     if (groupwise==T){
       e_data$cluster <- e_data[,clust[1]]
     }
@@ -132,7 +130,7 @@ plot_surv <- function(clust, cancer_surv){
     s <<- Surv(survival_time, survival_status)
     fit <- survfit(s~cluster,data=e_clust_data) # fits survival curve to data
     
-    # # compute cox regression and add pvalues to df
+    # compute cox regression and add pvalues to df
     if(length(unique(e_clust_data$gender))>1){
       res.cox <- coxph(s ~ cluster + age + gender + purity, data =  e_clust_data)
       coxpval <- coef(summary(res.cox))[,5]
@@ -144,7 +142,6 @@ plot_surv <- function(clust, cancer_surv){
       cox_df[,e] <<- coxpval
     }
     
-    # write.csv(coxpval, paste0('Rank_',rank,'/',cancer,"_rank",rank,"_cluster", paste(clust, collapse="_"), "_cox_pval_",e,".csv"))
     # compute p-value of survival curve difference and write to pval_df
     diff <- survdiff(s~cluster,data=e_clust_data)
     pval <- pchisq(diff$chisq,df=length(diff$n)-1,lower.tail=F)
