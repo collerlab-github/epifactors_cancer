@@ -16,6 +16,6 @@ This script conducts survival analysis with cox regression to correct for patien
 
 This script conducts survival analysis with cox regression to correct for patient age, gender, and purity information.
 
-## 03_survival_p53.R
+## 03_survival_tp53.R
 
 This script conducts survival analysis with cox regression to correct for patient age, gender, and p53 expression.
