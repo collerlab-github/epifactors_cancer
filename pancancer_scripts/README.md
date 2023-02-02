@@ -10,4 +10,4 @@ This script log2 normalizes the pancancer dataset.
 
 ## 02_umap
 ### 01_umap
-This script generates a umap from the pancancer dataset.
+This script generates a umap from the pancancer dataset when using all epigenes or only top NMF genes.
