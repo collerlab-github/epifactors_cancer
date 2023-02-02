@@ -1,9 +1,6 @@
-library(ComplexHeatmap)
 library(dplyr)
 library(stringr)
 library(reshape2)
-library(RColorBrewer)
-library(circlize)
 library(readxl)
 
 project <- 'TCGA'
