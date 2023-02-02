@@ -16,10 +16,10 @@ This script conducts uses survminer to stratify patients into high and low expre
 
 This script conducts uses survminer to stratify patients into high and low expression of a user-specified epigene and then performs survival analysis with cox regression to correct for patient age and gender.
 
-## HR_forestplot.R
+## HR_forest_plot.R
 
 This script plots the hazard ratios of the most significant endpoint-prognostic gene for each cancer.
 
-## circos.R
+## circos_plot.R
 
 This script plots a circos plot for the most frequent endpoint-prognostic genes among all cancers.
