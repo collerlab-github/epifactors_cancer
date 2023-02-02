@@ -1,4 +1,4 @@
-# NMF
+# Survival Analysis based on NMF clusters
 
 Prerequisites: 03_nmf and its prerequisites must be completed.
 
@@ -12,10 +12,10 @@ Here are the descriptions for the scripts.
 
 This script conducts survival analysis with cox regression to correct for patient age and gender.
 
-## 02_survival_purity.R
+## 01_survival_purity.R
 
 This script conducts survival analysis with cox regression to correct for patient age, gender, and purity information.
 
-## 03_survival_tp53.R
+## 01_survival_tp53.R
 
 This script conducts survival analysis with cox regression to correct for patient age, gender, and p53 expression.
