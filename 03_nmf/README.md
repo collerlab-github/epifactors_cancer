@@ -5,9 +5,13 @@ Prerequisites: 01_data_collection and 02_filtering must be completed.
 This folder contains scripts for running NMF and generating initial visualizations. Here are the descriptions for the scripts.
 
 
-## 01_nmf
+## 01_nmf.R
 
 This script runs NMF on the patient x epigene matrix, picks an optimal rank, and retrieves patients' cluster memberships and top NMF genes.
+
+## 01a_nmf_cluster_metrics.R
+
+This script calculates NMF cluster metrics.
 
 ## 02_top_genes_heatmap.R
 
